@@ -6,6 +6,20 @@
         xmlns:local="clr-namespace:Ejercicio1_DINT_Tema3"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" MaxWidth="800">
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Window.Resources>
     <StackPanel>
         <StackPanel>
             <StackPanel.Background>
@@ -14,8 +28,8 @@
                     <GradientStop Color="ForestGreen" Offset="0"/>
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <TextBlock Text="Nombre" FontWeight="Bold" FontSize="16" Margin="5"/>
-            <TextBox Margin="5"/>
+            <TextBlock Text="Nombre"/>
+            <TextBox/>
         </StackPanel>
         <StackPanel>
             <StackPanel.Background>
@@ -24,8 +38,8 @@
                     <GradientStop Color="LightSkyBlue" Offset="0"/>
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <TextBlock Text="Direccion" FontWeight="Bold" FontSize="16" Margin="5"/>
-            <TextBox Margin="5"/>
+            <TextBlock Text="Direccion"/>
+            <TextBox/>
         </StackPanel>
         <StackPanel>
             <StackPanel.Background>
@@ -34,12 +48,12 @@
                     <GradientStop Color="DeepPink" Offset="0"/>
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <TextBlock Text="Correo" FontWeight="Bold" FontSize="16" Margin="5"/>
-            <TextBox Width="600" HorizontalAlignment="Left" Margin="5"/>
+            <TextBlock Text="Correo"/>
+            <TextBox Width="600" HorizontalAlignment="Left"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Width="100" Margin="10">Aceptar</Button>
-            <Button Width="100" Margin="10">Cancelar</Button>
+            <Button>Aceptar</Button>
+            <Button>Cancelar</Button>
         </StackPanel>
     </StackPanel>
 </Window>
